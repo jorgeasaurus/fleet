@@ -2419,6 +2419,7 @@ CREATE TABLE `mdm_microsoft_graph_credentials` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `tenant_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `client_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `cloud` varchar(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'global',
   `client_secret` blob NOT NULL,
   `credential_invalid` tinyint(1) NOT NULL DEFAULT '0',
   `last_synced_at` datetime(6) DEFAULT NULL,
